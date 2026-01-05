@@ -1,0 +1,18 @@
+# FFmpeg YT Scripts .gitignore
+
+# Custom bat files
+test.bat
+my-*.bat
+custom-*.bat
+*-copy.bat
+*-backup.bat
+*-old.bat
+*-test.bat
+
+# mp4 files
+*.mp4
+
+# Output directories
+youtube_4k_*fps_nvenc/
+youtube_1440p_*fps_nvenc/
+youtube_1080p_*fps_nvenc/

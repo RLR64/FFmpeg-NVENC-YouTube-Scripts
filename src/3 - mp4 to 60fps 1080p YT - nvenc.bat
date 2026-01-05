@@ -1,0 +1,19 @@
+@echo off
+setlocal EnableDelayedExpansion
+mkdir "youtube_1080p_60fps_nvenc" 2>nul
+
+for /r %%f in (*.mp4) do (
+    set "input=%%f"
+    echo %%f | findstr /i /c:"youtube_1080p_60fps_nvenc" >nul
+    if !errorlevel! neq 0 (
+        set "relative=%%f"
+        set "relative=!relative:%CD%\=!"
+        set "output=youtube_1080p_60fps_nvenc\!relative:.mp4=youtube_1080p_60fps_nvenc.mp4!"
+        for %%d in ("!output!") do mkdir "%%~dpd" 2>nul
+        echo Processing 1080p 60fps with NVENC: !relative!
+        ffmpeg -hwaccel cuda -i "!input!" -filter:v "scale=1920:1080:flags=lanczos,fps=60" -c:v h264_nvenc -preset p4 -tune hq -rc vbr -cq 19 -maxrate 30M -pix_fmt yuv420p -c:a aac -b:a 512k -ar 48000 -movflags +faststart "!output!"
+    )
+)
+
+echo 1080p 60fps NVENC optimization complete!
+pause
