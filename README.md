@@ -65,7 +65,3 @@ Batch scripts that optimize MP4 videos for YouTube using FFmpeg with CUDA accele
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Attribution
-Icon designed by Abdulla Ashraf from freepik ([author profile](https://www.freepik.com/))
-Edited with a black glow.
