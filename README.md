@@ -39,6 +39,14 @@ Batch scripts that optimize MP4 videos for YouTube using FFmpeg with CUDA accele
 - `3 - mp4 to 50fps 1080p YT - nvenc.bat` - 1920x1080 @ 50fps (30 Mbps)
 - `3 - mp4 to 60fps 1080p YT - nvenc.bat` - 1920x1080 @ 60fps (30 Mbps)
 
+## 1920p (Youtube Shorts)
+
+- `4 - mp4 to 24fps 1920p YT Short - nvenc.bat` - 1080x1920 @ 24fps (15 Mbps)
+- `4 - mp4 to 25fps 1920p YT Short - nvenc.bat` - 1080x1920 @ 25fps (15 Mbps)
+- `4 - mp4 to 30fps 1920p YT Short - nvenc.bat` - 1080x1920 @ 30fps (15 Mbps)
+- `4 - mp4 to 50fps 1920p YT Short - nvenc.bat` - 1080x1920 @ 50fps (30 Mbps)
+- `4 - mp4 to 60fps 1920p YT Short - nvenc.bat` - 1080x1920 @ 60fps (30 Mbps)
+
 ## Usage
 
 1. Place the desired batch script in the folder containing your MP4 files
@@ -65,3 +73,7 @@ Batch scripts that optimize MP4 videos for YouTube using FFmpeg with CUDA accele
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Attribution
+Icon designed by Abdulla Ashraf from freepik ([author profile](https://www.freepik.com/))
+Edited with a black glow.
